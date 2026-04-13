@@ -14,15 +14,19 @@
     <text x="400" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" fill="#fff" font-weight="700" letter-spacing="1">awesome-illes-balears</text>
     <rect x="280" y="86" width="240" height="2" rx="1" fill="#8B0000" opacity="0.5"/>
     <text x="400" y="116" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="rgba(255,255,255,0.5)" font-weight="300" letter-spacing="3">SOFTWARE OPEN SOURCE PER A LES ILLES BALEARS</text>
-    <!-- 4 island shapes: stylized waves for each island -->
-    <g fill="#F1BF00" opacity="0.5" transform="translate(400,155)">
-      <g transform="translate(-54,0)"><path d="M-6,4h12v3h-12z M-6,4l3-6 3,4 3-4 3,6z"/></g>
-      <g transform="translate(-18,0)"><path d="M-6,4h12v3h-12z M-6,4l3-6 3,4 3-4 3,6z"/></g>
-      <g transform="translate(18,0)"><path d="M-6,4h12v3h-12z M-6,4l3-6 3,4 3-4 3,6z"/></g>
-      <g transform="translate(54,0)"><path d="M-6,4h12v3h-12z M-6,4l3-6 3,4 3-4 3,6z"/></g>
-      <g transform="translate(-36,18)"><path d="M-6,4h12v3h-12z M-6,4l3-6 3,4 3-4 3,6z"/></g>
-      <g transform="translate(0,18)"><path d="M-6,4h12v3h-12z M-6,4l3-6 3,4 3-4 3,6z"/></g>
-      <g transform="translate(36,18)"><path d="M-6,4h12v3h-12z M-6,4l3-6 3,4 3-4 3,6z"/></g>
+    <!-- 4 islands as rounded land shapes + surrounding waves -->
+    <g opacity="0.5" transform="translate(400,160)">
+      <!-- Mallorca (largest) -->
+      <ellipse cx="-40" cy="0" rx="18" ry="8" fill="#F1BF00"/>
+      <!-- Menorca -->
+      <ellipse cx="10" cy="-6" rx="10" ry="5" fill="#F1BF00"/>
+      <!-- Eivissa -->
+      <ellipse cx="40" cy="4" rx="8" ry="5" fill="#F1BF00"/>
+      <!-- Formentera -->
+      <ellipse cx="55" cy="12" rx="6" ry="3" fill="#F1BF00"/>
+      <!-- Waves -->
+      <path d="M-75,18 Q-65,14 -55,18 Q-45,22 -35,18 Q-25,14 -15,18 Q-5,22 5,18 Q15,14 25,18 Q35,22 45,18 Q55,14 65,18 Q75,22 85,18" fill="none" stroke="#0077BE" stroke-width="1.5" opacity="0.4"/>
+      <path d="M-80,24 Q-70,20 -60,24 Q-50,28 -40,24 Q-30,20 -20,24 Q-10,28 0,24 Q10,20 20,24 Q30,28 40,24 Q50,20 60,24 Q70,28 80,24" fill="none" stroke="#0077BE" stroke-width="1" opacity="0.3"/>
     </g>
   </g>
 </svg>

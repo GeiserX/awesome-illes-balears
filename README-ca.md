@@ -4,6 +4,7 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
   <br><br>
   <p>Una selecció de programari de codi obert que dona suport específic a les Illes Balears, els seus municipis, consells insulars i institucions.</p>
+  <p><a href="README.md">Versió en castellà</a></p>
 </div>
 
 ## Contingut

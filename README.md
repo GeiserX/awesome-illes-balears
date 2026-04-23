@@ -4,6 +4,7 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
   <br><br>
   <p>Una selección de software open source que da soporte específico a les Illes Balears, sus municipios, consells insulars e instituciones.</p>
+  <p><a href="README-ca.md">Versión en catalán</a></p>
 </div>
 
 ## Contenido

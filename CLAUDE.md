@@ -1,4 +1,4 @@
-# AGENTS.md — awesome-illes-balears
+# CLAUDE.md — awesome-illes-balears
 
 ## Propósito
 

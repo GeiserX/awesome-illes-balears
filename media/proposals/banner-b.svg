@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <clipPath id="clipR"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="skyDusk" x1="0" y1="0" x2="0" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0a12"/>
+      <stop offset="55%" stop-color="#171528"/>
+      <stop offset="85%" stop-color="#3a2536"/>
+      <stop offset="100%" stop-color="#6e3a34"/>
+    </linearGradient>
+    <radialGradient id="sunHalo" cx="745" cy="116" r="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f4a24e" stop-opacity="0.75"/>
+      <stop offset="30%" stop-color="#d0643a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d0643a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="seaDeep" x1="0" y1="150" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1c2a3a"/><stop offset="100%" stop-color="#0a1018"/>
+    </linearGradient>
+    <linearGradient id="rockDark" x1="0" y1="40" x2="0" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a1422"/><stop offset="100%" stop-color="#0c0a12"/>
+    </linearGradient>
+    <linearGradient id="rockNear" x1="0" y1="110" x2="0" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#110d17"/><stop offset="100%" stop-color="#07060b"/>
+    </linearGradient>
+    <filter id="blurSun" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <g clip-path="url(#clipR)">
+    <rect width="800" height="200" fill="url(#skyDusk)"/>
+    <rect width="800" height="150" fill="url(#sunHalo)"/>
+    <circle cx="745" cy="116" r="22" fill="#f6b25c" opacity="0.6" filter="url(#blurSun)"/>
+    <circle cx="745" cy="116" r="15" fill="#fbd08a"/>
+    <!-- sea -->
+    <rect x="0" y="150" width="800" height="50" fill="url(#seaDeep)"/>
+    <rect x="0" y="150" width="800" height="1" fill="#f4a24e" opacity="0.35"/>
+    <!-- sun path on the water -->
+    <g fill="#fbd08a">
+      <rect x="723" y="154" width="44" height="1.6" rx="0.8" opacity="0.8"/>
+      <rect x="729" y="158" width="30" height="1.4" rx="0.7" opacity="0.7"/>
+      <rect x="717" y="162" width="52" height="1.4" rx="0.7" opacity="0.55"/>
+      <rect x="733" y="166" width="22" height="1.3" rx="0.6" opacity="0.5"/>
+      <rect x="711" y="171" width="40" height="1.2" rx="0.6" opacity="0.4"/>
+      <rect x="755" y="171" width="18" height="1.2" rx="0.6" opacity="0.35"/>
+      <rect x="725" y="177" width="36" height="1.2" rx="0.6" opacity="0.3"/>
+      <rect x="703" y="184" width="30" height="1.1" rx="0.5" opacity="0.22"/>
+      <rect x="743" y="184" width="40" height="1.1" rx="0.5" opacity="0.22"/>
+      <rect x="719" y="192" width="50" height="1" rx="0.5" opacity="0.15"/>
+    </g>
+    <g fill="#8aa2b8" opacity="0.18">
+      <rect x="40" y="160" width="60" height="1"/><rect x="160" y="168" width="90" height="1"/>
+      <rect x="300" y="158" width="70" height="1"/><rect x="420" y="176" width="110" height="1"/>
+      <rect x="90" y="186" width="80" height="1"/><rect x="250" y="192" width="120" height="1"/>
+      <rect x="520" y="164" width="60" height="1"/>
+    </g>
+    <!-- Es Vedrà -->
+    <path fill="url(#rockDark)" d="M545,150 L555,147 L561,139 L569,136 L574,124 L581,119 L585,104 L592,98 L595,84 L602,77 L604,64 L611,57 L615,46 L621,42 L624,34 L630,33 L634,38 L639,31 L645,30 L650,37 L656,40 L659,48 L666,53 L669,64 L677,70 L681,82 L690,88 L693,100 L702,104 L707,114 L717,118 L723,130 L735,135 L743,144 L757,150 Z"/>
+    <path fill="none" stroke="#f4a24e" stroke-opacity="0.5" stroke-width="1.2" stroke-linejoin="round" d="M645,30 L650,37 L656,40 L659,48 L666,53 L669,64 L677,70 L681,82 L690,88 L693,100 L702,104 L707,114 L717,118 L723,130"/>
+    <g fill="none" stroke="#2a2030" stroke-width="1" opacity="0.9">
+      <path d="M605,78 L617,96 L613,118"/><path d="M635,50 L641,74 L635,100 L643,126"/><path d="M665,70 L671,96 L665,120"/>
+    </g>
+    <!-- Es Vedranell -->
+    <path fill="url(#rockNear)" d="M452,150 L466,142 L478,139 L488,131 L498,125 L507,119 L516,115 L524,117 L532,112 L541,116 L549,122 L558,126 L568,129 L580,136 L594,144 L608,150 Z"/>
+    <path fill="none" stroke="#f4a24e" stroke-opacity="0.35" stroke-width="1" stroke-linejoin="round" d="M532,112 L541,116 L549,122 L558,126 L568,129 L580,136 L594,144"/>
+    <!-- reflections of the rocks -->
+    <path fill="#07060b" opacity="0.45" d="M545,150 L757,150 L739,160 L709,167 L655,172 L601,165 L563,157 Z"/>
+    <path fill="#07060b" opacity="0.45" d="M452,150 L608,150 L596,158 L540,162 L482,157 Z"/>
+    <!-- title block -->
+    <text x="48" y="92" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="36" fill="#ffffff" font-weight="700" letter-spacing="0.5">awesome-illes-balears</text>
+    <rect x="50" y="104" width="64" height="2" rx="1" fill="#f4a24e" opacity="0.8"/>
+    <text x="49" y="126" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#ffffff" fill-opacity="0.65" font-weight="400" letter-spacing="2.2">SOFTWARE OPEN SOURCE PER A LES ILLES BALEARS</text>
+  </g>
+</svg>

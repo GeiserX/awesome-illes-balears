@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "balears",
+  "project_id": "03aa9af4-ac3a-4a3c-a3fa-0871bbf976bd"
+}
